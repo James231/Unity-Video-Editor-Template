@@ -104,10 +104,9 @@ namespace UnityEngine.Timeline
             if (thumb == null)
             {
                 renderTexture.Release();
-                temp = GameObject.Find("temp");
                 if (temp == null)
                 {
-                    temp = new GameObject("temp");
+                    temp = new GameObject("temp" + Guid.NewGuid());
                 }
 
                 VideoPlayer tempVideoPlayer = temp.GetComponent<VideoPlayer>();
