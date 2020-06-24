@@ -51,7 +51,7 @@ namespace UnityEngine.Timeline
                     return;
                 }
 
-                Texture2D videoFrame = new Texture2D(renderTexture.width, renderTexture.height);
+                Texture2D videoFrame = new Texture2D((int)videoClip.width, (int)videoClip.height);
                 RenderTexture rt = source.texture as RenderTexture;
 
                 if (rt == null)
